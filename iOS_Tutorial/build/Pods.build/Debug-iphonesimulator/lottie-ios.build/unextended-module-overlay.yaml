@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/build/Debug-iphonesimulator/lottie-ios/Lottie.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/build/Pods.build/Debug-iphonesimulator/lottie-ios.build/unextended-module.modulemap",
+    }]
+  }]
+}

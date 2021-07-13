@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)"
+options: "22ed094065b18592324d9e7029db17a2"
+build_time: [1626211823, 934400000]
+inputs:
+  "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/ViewController.swift": [1626211282, 296088862]
+  "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Utils/AppRoot.swift": [1626211737, 720365516]
+  "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Generics/Network/Network.swift": [1626211697, 219795431]
+  "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Utils/AppDelegate.swift": [1626211729, 970800209]
+  "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Launch/Splash/Splash.swift": [1626211807, 872552584]
+  "/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Utils/SceneDelegate.swift": [1626211751, 263423236]

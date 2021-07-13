@@ -13,9 +13,14 @@
 		3BABED97269E3B52009C4886 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABED95269E3B52009C4886 /* Main.storyboard */; };
 		3BABED99269E3B53009C4886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BABED98269E3B53009C4886 /* Assets.xcassets */; };
 		3BABED9C269E3B53009C4886 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BABED9A269E3B53009C4886 /* LaunchScreen.storyboard */; };
+		3BABEDA5269E3C34009C4886 /* AppRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BABEDA4269E3C34009C4886 /* AppRoot.swift */; };
+		3BABEDA9269E3C9B009C4886 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BABEDA8269E3C9B009C4886 /* Splash.swift */; };
+		3BABEDAD269E3CE9009C4886 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BABEDAC269E3CE9009C4886 /* Network.swift */; };
+		7CEE9FF1F5D490162A144F40 /* Pods_iOS_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D500BCBAB9ED64E57A2AF92E /* Pods_iOS_Tutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18E9AD3778FC75EE2EA5B7CC /* Pods-iOS_Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-iOS_Tutorial/Pods-iOS_Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		3BABED8C269E3B52009C4886 /* iOS_Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BABED8F269E3B52009C4886 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BABED91269E3B52009C4886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		3BABED98269E3B53009C4886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BABED9B269E3B53009C4886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BABED9D269E3B53009C4886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BABEDA4269E3C34009C4886 /* AppRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoot.swift; sourceTree = "<group>"; };
+		3BABEDA8269E3C9B009C4886 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		3BABEDAC269E3CE9009C4886 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B4C99047FF52E4C5DB411A10 /* Pods-iOS_Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_Tutorial.release.xcconfig"; path = "Target Support Files/Pods-iOS_Tutorial/Pods-iOS_Tutorial.release.xcconfig"; sourceTree = "<group>"; };
+		D500BCBAB9ED64E57A2AF92E /* Pods_iOS_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEE9FF1F5D490162A144F40 /* Pods_iOS_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2B4653E3F64A09F14D8AF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18E9AD3778FC75EE2EA5B7CC /* Pods-iOS_Tutorial.debug.xcconfig */,
+				B4C99047FF52E4C5DB411A10 /* Pods-iOS_Tutorial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3BABED83269E3B52009C4886 = {
 			isa = PBXGroup;
 			children = (
 				3BABED8E269E3B52009C4886 /* iOS_Tutorial */,
 				3BABED8D269E3B52009C4886 /* Products */,
+				1D2B4653E3F64A09F14D8AF3 /* Pods */,
+				86C1D6E376C749AD856FFA01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +78,9 @@
 		3BABED8E269E3B52009C4886 /* iOS_Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3BABED8F269E3B52009C4886 /* AppDelegate.swift */,
-				3BABED91269E3B52009C4886 /* SceneDelegate.swift */,
+				3BABEDAA269E3CC5009C4886 /* Generics */,
+				3BABEDA6269E3C87009C4886 /* Launch */,
+				3BABEDA3269E3BF4009C4886 /* Utils */,
 				3BABED93269E3B52009C4886 /* ViewController.swift */,
 				3BABED95269E3B52009C4886 /* Main.storyboard */,
 				3BABED98269E3B53009C4886 /* Assets.xcassets */,
@@ -67,6 +90,56 @@
 			path = iOS_Tutorial;
 			sourceTree = "<group>";
 		};
+		3BABEDA3269E3BF4009C4886 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3BABED8F269E3B52009C4886 /* AppDelegate.swift */,
+				3BABED91269E3B52009C4886 /* SceneDelegate.swift */,
+				3BABEDA4269E3C34009C4886 /* AppRoot.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3BABEDA6269E3C87009C4886 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				3BABEDA7269E3C8F009C4886 /* Splash */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		3BABEDA7269E3C8F009C4886 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3BABEDA8269E3C9B009C4886 /* Splash.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3BABEDAA269E3CC5009C4886 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				3BABEDAB269E3CDB009C4886 /* Network */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
+		3BABEDAB269E3CDB009C4886 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3BABEDAC269E3CE9009C4886 /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		86C1D6E376C749AD856FFA01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D500BCBAB9ED64E57A2AF92E /* Pods_iOS_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BABEDA0269E3B53009C4886 /* Build configuration list for PBXNativeTarget "iOS_Tutorial" */;
 			buildPhases = (
+				B9877520B0A398663D1DFEBB /* [CP] Check Pods Manifest.lock */,
 				3BABED88269E3B52009C4886 /* Sources */,
 				3BABED89269E3B52009C4886 /* Frameworks */,
 				3BABED8A269E3B52009C4886 /* Resources */,
+				232A61D63CA28FB31EA3BAF1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +207,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		232A61D63CA28FB31EA3BAF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_Tutorial/Pods-iOS_Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS_Tutorial/Pods-iOS_Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS_Tutorial/Pods-iOS_Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9877520B0A398663D1DFEBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS_Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BABED88269E3B52009C4886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3BABED94269E3B52009C4886 /* ViewController.swift in Sources */,
+				3BABEDA5269E3C34009C4886 /* AppRoot.swift in Sources */,
+				3BABEDAD269E3CE9009C4886 /* Network.swift in Sources */,
 				3BABED90269E3B52009C4886 /* AppDelegate.swift in Sources */,
+				3BABEDA9269E3C9B009C4886 /* Splash.swift in Sources */,
 				3BABED92269E3B52009C4886 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +403,14 @@
 		};
 		3BABEDA1269E3B53009C4886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E9AD3778FC75EE2EA5B7CC /* Pods-iOS_Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 652H4HAFN5;
 				INFOPLIST_FILE = iOS_Tutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +418,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.handijital.iOS-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3BABEDA2269E3B53009C4886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C99047FF52E4C5DB411A10 /* Pods-iOS_Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 652H4HAFN5;
 				INFOPLIST_FILE = iOS_Tutorial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +439,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.handijital.iOS-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

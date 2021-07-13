@@ -1,3 +1,6 @@
 /Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/ViewController.swift
-/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/AppDelegate.swift
-/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/SceneDelegate.swift
+/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Utils/AppRoot.swift
+/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Generics/Network/Network.swift
+/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Utils/AppDelegate.swift
+/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Launch/Splash/Splash.swift
+/Users/melikebusraayhan/iOS_Tutorial/iOS_Tutorial/iOS_Tutorial/Utils/SceneDelegate.swift

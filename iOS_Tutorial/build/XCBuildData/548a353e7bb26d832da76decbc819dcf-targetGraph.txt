@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+lottie-ios in Pods
+Pods-iOS_Tutorial in Pods, depends on:
+lottie-ios in Pods (explicit)
+iOS_Tutorial in iOS_Tutorial, depends on:
+Pods-iOS_Tutorial in Pods (implicit dependency via file 'Pods_iOS_Tutorial.framework' in build phase 'Link Binary'
+lottie-ios in Pods (implicit dependency via options '-framework Lottie' in build setting 'OTHER_LDFLAGS'

@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Pods-iOS_Tutorial in Pods
+iOS_Tutorial in iOS_Tutorial, depends on:
+Pods-iOS_Tutorial in Pods (implicit dependency via file 'Pods_iOS_Tutorial.framework' in build phase 'Link Binary'
